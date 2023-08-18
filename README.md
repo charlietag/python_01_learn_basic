@@ -1,9 +1,5 @@
 # Learn Python
-
----
-
 ## Learn Python - basic concept
-
 ### Environment
 
 * Python version
