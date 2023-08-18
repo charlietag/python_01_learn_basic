@@ -4,7 +4,7 @@
 
 * Python version
     * 3.11.4
-* Python - Compiled with
+* Python version manager
     * pyenv
 * Packages manager
     * poetry
