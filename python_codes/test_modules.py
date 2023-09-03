@@ -1,22 +1,6 @@
-# class Post:
-#     # 建構式
-#     def __init__(self):
-#         self.titles = []
-#     # 新增文章
-#     def add_post(self, title):
-#         self.titles.append(title)
-#     # 刪除文章
-#     def delete_post(self, title):
-#         self.titles.remove(title)
-#
-#
-# a = Post()
-# a.titles = [
-#     "asdfasdf"
-# ]
-# a.add_post("cccc")
-# print(a.titles)
-
+# -------------------------------------------------------------------
+# Sample 1
+# -------------------------------------------------------------------
 # from modules.recursive import recursive_list
 from modules.recursive import recursive_list as r
 # import modules.recursive
@@ -43,3 +27,44 @@ r(all_lists)
 
 # error
 # import recursive_list
+
+# -------------------------------------------------------------------
+# Sample 2 - leverage modules/__init__.py
+# -------------------------------------------------------------------
+# print("-----------------------------------------")
+# import sys
+# print(sys.version)
+
+
+
+
+print("-----------------------------------------")
+# import modules.built_in
+# modules.built_in.print_name()
+
+# works with modules/__init__.py
+# import modules
+# modules.built_in.print_name()
+
+import modules as ml
+ml.built_in.print_name()
+
+# --- This will fail ---
+# modules/__init__.py: from modules import built_in
+# import modules
+# built_in.print_name()
+# --- This will fail ---
+
+# print("-----------------------------------------")
+# from modules import built_in
+# built_in.print_name()
+
+# from modules.built_in import print_name as b
+# b()
+
+
+# print("-----------------------------------------")
+# print(__name__)
+#
+# print(__file__)
+

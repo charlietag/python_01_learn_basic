@@ -27,3 +27,21 @@ print(p1.age)
 print(p1)
 p1.my_func()
 
+# class Post:
+#     # Initial
+#     def __init__(self):
+#         self.titles = []
+#     # new post
+#     def add_post(self, title):
+#         self.titles.append(title)
+#     # delete post
+#     def delete_post(self, title):
+#         self.titles.remove(title)
+#
+#
+# a = Post()
+# a.titles = [
+#     "asdfasdf"
+# ]
+# a.add_post("cccc")
+# print(a.titles)
