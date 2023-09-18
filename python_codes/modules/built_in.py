@@ -7,5 +7,8 @@ def print_name():
     print(__name__)
     print(__file__)
 
+    import __main__
+    print(__main__.__file__)
+
 # print(__name__)
 # print(__file__)
