@@ -10,5 +10,6 @@ def print_name():
     import __main__
     print(__main__.__file__)
 
-# print(__name__)
-# print(__file__)
+if __name__ == "__main__":
+    print(__name__)
+    print(__file__)
