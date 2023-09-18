@@ -1,7 +1,10 @@
 # -------------------------------------------------------
-# if this is a package folder, __init__.py must exist
-# even it's an empty file
+# Package
 # -------------------------------------------------------
+# 1. if this is a package folder, __init__.py must exist, even it's an empty file
+# 2. PYTHONPATH:
+#                Ensure that the directory containing your mypackage is included in the Python path (sys.path).
+#                If it's not, you may need to add it manually or modify the PYTHONPATH environment variable.
 
 # ------------- import folder/module --------------
 # https://csatlas.com/python-import-file-module/
@@ -11,4 +14,6 @@
 # import modules.built_in
 
 
-from modules import built_in
+# If this package folder is not under os.sys PATH, manually import files explicitly
+# from modules import built_in
+from . import built_in
