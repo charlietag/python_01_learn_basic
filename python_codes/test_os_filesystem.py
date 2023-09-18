@@ -50,8 +50,8 @@ Path(mkdir_test_tree_folders).mkdir(parents=True, exist_ok=True)
 # os.chdir(mkdir_test_tree_folders)
 # print(os.getcwd())
 
-------
-rm -fr a
+# ------
+# rm -fr a
 from shutil import rmtree
 mkdir_test_tree_folders = "a"
 rmtree(mkdir_test_tree_folders)
