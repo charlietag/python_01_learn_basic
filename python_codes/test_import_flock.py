@@ -1,3 +1,6 @@
+from pathlib import Path
 import test_import_flock as f
-script = f.FileLock()
+
+lock_file = Path(__file__).with_suffix('.lock')
+script = f.FileLock(name=lock_file)
 script.lock()
