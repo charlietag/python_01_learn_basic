@@ -16,4 +16,5 @@
 
 # If this package folder is not under os.sys PATH, manually import files explicitly
 # from modules import built_in
-from . import built_in
+
+from .built_in import print_name

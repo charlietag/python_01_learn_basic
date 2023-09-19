@@ -46,8 +46,8 @@ print("-----------------------------------------")
 # import modules
 # modules.built_in.print_name()
 
-import modules as ml
-ml.built_in.print_name()
+import modules
+modules.print_name()
 
 # --- This will fail ---
 # modules/__init__.py: from modules import built_in
