@@ -14,6 +14,10 @@ class Person:
     def my_func(self):
         print("Hi, my name is " + self.name)
 
+        # variable no need to declare in __init__
+        local_var_test = "test local method var"
+        print(local_var_test)
+
 p1 = Person("Charlie", 35)
 print(p1.name)
 print(p1.age)
