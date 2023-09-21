@@ -1,3 +1,6 @@
+# dir(var) - display what functions, methods exists in var
+
+
 def show_msg():
     # print("msg")
     return "--msg--"
