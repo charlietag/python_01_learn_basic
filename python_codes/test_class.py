@@ -35,12 +35,16 @@ class Post:
     # Initial
     def __init__(self):
         self.titles = []
+        self.print_haha()
     # new post
     def add_post(self, title):
         self.titles.append(title)
     # delete post
     def delete_post(self, title):
         self.titles.remove(title)
+
+    def print_haha(self):
+        print("-------- HAHA: call from __init__ ---------")
 
 
 a = Post()
