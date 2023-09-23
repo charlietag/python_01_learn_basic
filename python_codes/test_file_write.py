@@ -7,5 +7,7 @@
 with open("test_file_write.txt", "w", encoding="utf-8") as f:
     f.write("testAA\n")
     f.write("testAA\n")
+
+    # the same as above, but no need to add \n
     print("testB", file = f)
     print("testB", file = f)
