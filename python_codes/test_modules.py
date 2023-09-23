@@ -1,10 +1,10 @@
 # -------------------------------------------------------------------
 # Sample 1
 # -------------------------------------------------------------------
-# from modules.recursive import recursive_list
-from modules.recursive import recursive_list as r
-# import modules.recursive
-# import modules.recursive as r
+# from test_modules.recursive import recursive_list
+from test_modules.recursive import recursive_list as r
+# import test_modules.recursive
+# import test_modules.recursive as r
 
 all_lists = [
     "Charlie",
@@ -21,7 +21,7 @@ all_lists = [
 
 # recursive_list(all_lists)
 r(all_lists)
-# modules.recursive.recursive_list(all_lists)
+# test_modules.recursive.recursive_list(all_lists)
 # r.recursive_list(all_lists)
 
 
@@ -29,7 +29,7 @@ r(all_lists)
 # import recursive_list
 
 # -------------------------------------------------------------------
-# Sample 2 - leverage modules/__init__.py
+# Sample 2 - leverage test_modules/__init__.py
 # -------------------------------------------------------------------
 # print("-----------------------------------------")
 # import sys
@@ -39,32 +39,33 @@ r(all_lists)
 
 
 print("-----------------------------------------")
-# import modules.built_in
-# modules.built_in.print_name()
+# import test_modules.built_in
+# test_modules.built_in.print_name()
 
-# works with modules/__init__.py
-# import modules
-# modules.built_in.print_name()
+# works with test_modules/__init__.py
+# import test_modules
+# test_modules.built_in.print_name()
 
-import modules
-modules.print_name()
+import test_modules
+test_modules.print_name()
 
 # --- This will fail ---
-# modules/__init__.py: from modules import built_in
-# import modules
+# test_modules/__init__.py: from test_modules import built_in
+# import test_modules
 # built_in.print_name()
 # --- This will fail ---
 
 # print("-----------------------------------------")
-# from modules import built_in
+# from test_modules import built_in
 # built_in.print_name()
 
-# from modules.built_in import print_name as b
+# from test_modules.built_in import print_name as b
 # b()
 
 
-# print("-----------------------------------------")
-# print(__name__)
-#
-# print(__file__)
+print("-----------------------------------------")
+print(__name__)
+# __main__
 
+print(__file__)
+# /home/pythonuser/work___space/python_01_learn_basic/python_codes/test_modules.py

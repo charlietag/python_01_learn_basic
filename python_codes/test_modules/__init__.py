@@ -13,10 +13,10 @@
 
 # ------------- reference pandas --------------
 # Ref. https://github.com/pandas-dev/pandas/tree/main/pandas
-# import modules.built_in
+# import test_modules.built_in
 
 
 # If this package folder is not under os.sys PATH, manually import files explicitly
-# from modules import built_in
+# from test_modules import built_in
 
 from .built_in import print_name
