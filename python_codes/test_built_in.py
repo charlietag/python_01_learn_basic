@@ -65,3 +65,15 @@ print(my_string)
 print(my_string.strip())
 # --- test string ---
 
+
+
+# ------------------------------------------------
+# Try built-in: datetime
+# ------------------------------------------------
+import datetime
+now = datetime.datetime.now()
+aage = now.year - 1984
+print(aage)
+# 39
+
+
