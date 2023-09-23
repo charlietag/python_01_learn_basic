@@ -10,6 +10,9 @@ except Exception as e:
     # if a = "abc"
     # print err msg: invalid literal for int() with base 10: 'abc'
     print(e)
+
+    # pass is useful just like -> continue
+    # pass
 else:
     # if a = 1
     print("go if no error")
