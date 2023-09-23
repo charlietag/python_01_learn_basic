@@ -1,4 +1,21 @@
 # -----------------------------------------------------
+# Test - Basic class (special use --- pass)
+# -----------------------------------------------------
+class Special:
+    def __init__(self):
+        # Cannot be empty, so add continue method - pass
+        pass
+
+s = Special()
+s.name = "Anne"
+print(s.name)
+# Anne
+
+# amazing... no need , getter and setter
+# no even need to setup class variable or instance variable first
+
+
+# -----------------------------------------------------
 # Test 1 - Basic class
 # -----------------------------------------------------
 class MyClass:
